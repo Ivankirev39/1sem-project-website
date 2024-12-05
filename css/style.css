@@ -133,3 +133,291 @@
 
     /* nav bar end */
     
+    .hero {
+        background-image: url("https://picsum.photos/1920/800");
+        width: var(--width-full);
+        height: 600px;
+        min-width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative; 
+        color: var(--background-color-light);
+    }
+    
+    .hero-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto;
+        width: var(--width-12col);
+        gap: var(--grid-gap);
+        margin: 0 auto;
+        }
+
+        .hero-text {
+            grid-column: 1 / span 4;
+            margin-top: 120px;
+            grid-row: 1;
+        }
+        
+
+        .hero-text-large {
+            font-size: 37px;
+            font-weight: 700;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+
+        .hero-text-medium {
+            
+            margin-top: 10px;
+        }
+
+    
+       
+
+        .organization_categories {
+            display: flex;
+            gap: 120px; 
+            justify-content: center; 
+          }
+          
+          .organization_categories_block {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+            width: 120px; 
+            gap: 10px; 
+            padding: 10px;
+            border-radius: 5px;
+            margin-top:20px ;
+          }
+          
+          .organization_categories_block_image img {
+            width: 80px; 
+            height: auto;
+          }
+          .organization_categories_block_text{
+              width: 150px;
+        
+          }
+          .organization_categories_block_text h6 {
+            font-size: 16px;
+            color: var(--color-black);
+          }          
+
+          .about_us_content_block {
+            display: grid;
+            height: auto;
+            grid-template-columns: 1fr 1fr;
+            width: var(--width-12col);
+            margin:0 auto;
+            margin-top: 10px;
+           
+        }
+        
+        .about_us_content_block_boxes {
+            
+            background-color: var(--background-color-light) ;
+            gap: 10px;
+          
+        }
+        
+        .about_us_content_block_boxes img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .about_us_content_block_boxes_one_maintext {
+            margin-top: 118px;
+            margin-left: 140px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        
+        .about_us_content_block_boxes_one_undertext {
+            margin-left: 140px;
+            margin-top: 25px;
+            font-size: 16px;
+            
+        }
+        
+        .about_us_content_block_boxes_one_button button {
+            background-color: var(--primary-color);
+            border: 1px solid var(--background-color-light);
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 220px;
+            height: 40px;
+            margin-top: 40px;
+            }
+        
+        .about_us_content_block_boxes_one_button  button a {
+            color: var(--color-white);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            }
+        
+        
+        .about_us_content_block_boxes_four_maintext {
+          margin-top: 118px;
+            margin-left: 140px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        
+        .about_us_content_block_boxes_four_undertext {
+            margin-left: 140px;
+            margin-top: 25px;
+            font-size: 16px;
+            
+        }
+        
+        .about_us_content_block_boxes_four_button button {
+            background-color: var(--primary-color);
+            border: 1px solid var(--background-color-light);
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 220px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: 130px;
+            }
+        
+        .about_us_content_block_boxes_four_button  button a {
+            color: var(--color-white);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            }
+        
+        
+        .about_us_content_block_boxes_five_maintext {
+            margin-top: 118px;
+            margin-left: 100px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+      
+        
+        .about_us_content_block_boxes_five_undertext {
+            margin-left: 100px;
+            margin-top: 25px;
+            font-size: 16px;
+        }
+        
+        .about_us_content_block_boxes_six img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .about_us_content_block_boxes_five_button button {
+            background-color: var(--primary-color);
+            border: 1px solid var(--background-color-light);
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 220px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: 100px;
+            }
+        
+        .about_us_content_block_boxes_five_button  button a {
+            color: var(--color-white);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            }
+
+
+            .about_us_content_block_boxes_seven_button button {
+                background-color: var(--primary-color);
+                border: 1px solid var(--background-color-light);
+                padding: 8px 16px;
+                border-radius: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                cursor: pointer;
+                width: 220px;
+                height: 40px;
+                margin-top: 40px;
+                margin-left: 130px;
+                }
+
+                .about_us_content_block_boxes_seven_maintext {
+                    margin-top: 118px;
+                    margin-left: 140px;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                
+              
+                
+                .about_us_content_block_boxes_seven_undertext {
+                    margin-left: 140px;
+                    margin-top: 25px;
+                    font-size: 16px;
+                }
+            
+            .about_us_content_block_boxes_seven_button  button a {
+                color: var(--color-white);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                }
+
+                .about_us_content_block_boxes_eight img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .achievements_headline {
+                    color: var(--color-black);
+                    height: 60px;
+                    border-bottom: 1px solid var(--color-black);
+                    font-weight: 700;
+                    margin-top: 70px;
+                    
+                    display: flex;
+                    justify-self: flex-start;
+                    margin: 0 auto;
+                    width: var(--width-full);
+                    font-size: 50px;
+                }
+
+                .achievements_block_one {
+                    margin-top: 20px;
+                    width: var(--width-full);
+                    height: 350px;
+                    background-color: var(--secondary-color);
+                    display: flex; /* Use flexbox to center the frame */
+                    
+                    align-items: center; /* Center vertically */
+                  }
+                  
+                  .achievements_block_one_frame {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; /* Optional: centers content inside the frame */
+                    background-color: var(--color-white);
+                    width: 520px;
+                    height: 280px;
+                    margin-left: 55px; /* Shift the frame slightly to the right */
+                  }
+                  
+                  
