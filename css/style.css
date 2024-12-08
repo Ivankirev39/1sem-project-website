@@ -44,21 +44,34 @@
         background-color: var(--color-white);
         font-family: "Merriweather Sans", system-ui;
     }
-    @media (max-width: 768px) {
+    @media (width < 768px) {
         .nav-container ul {
             flex-direction: column; 
             gap: 10px; 
             padding-left: 10px; 
+            margin-left: 60px;
+        }
+
+        .nav-container ul li {
+            flex-direction: column; 
+            gap: 10px; 
+            font-size: 18px;
+            
         }
     
-        .nav-container ul li {
-            width: auto; 
-            text-align: left; 
-        }
     
         .search-box {
             align-self: flex-start; 
         }
+
+        
+    .nav-container ul li:nth-child(1) {
+        width: 120px; 
+        margin-left: -25px;
+    
+    }
+
+    
     }
     .container{
     background: var(--color-white);
@@ -86,7 +99,7 @@
         padding: 0;
         gap: 20px;
         justify-content: start; 
-        padding-left: 100px; 
+        padding-left: 150px; 
     }
     
     .nav-container ul li {
@@ -114,6 +127,8 @@
        
     }
     
+
+   
     
     
     .nav-container ul li:last-child a {
@@ -151,7 +166,7 @@
     /* nav bar end */
     
     .hero {
-        background-image: url("https://picsum.photos/1920/800");
+        background-image: url(https://unity.edu/wp-content/uploads/2024/05/Microplastics-In-The-Ocean-scaled.jpg);
         width: var(--width-full);
         height: 600px;
         min-width: 600px;
@@ -218,6 +233,30 @@
             font-weight: 700;
         }
 
+
+
+        @media (width < 768px) {
+          .hero-text-large {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+          }
+
+          .hero-text-medium {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 60px;
+          }
+          .hero-container a {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            margin-left: 150px;
+          }
+        }
+
     
        
 
@@ -250,17 +289,37 @@
           .organization_categories_block_text h6 {
             font-size: 16px;
             color: var(--color-black);
-          }          
+          }       
+          
+          @media (width < 768px) {
+            .organization_categories {
+              flex-wrap: wrap; /* Allow items to wrap onto the next row */
+              gap: 40px; /* Further reduce gap */
+            }
+            
+            .organization_categories_block {
+              width: 100px; /* Shrink the blocks */
+            }
+          
+            .organization_categories_block_image img {
+              width: 60px; /* Reduce image size */
+            }
+          
+            .organization_categories_block_text h6 {
+              font-size: 14px; /* Decrease font size */
+            }
+          }
+          
 
           .about_us_content_block {
             display: grid;
             height: auto;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr; /* Default layout for larger screens */
             width: var(--width-12col);
-            margin:0 auto;
+            margin: 0 auto;
             margin-top: 10px;
-           
-        }
+            gap: 20px; /* Space between items */
+          }
         
         .about_us_content_block_boxes {
             
@@ -311,7 +370,7 @@
         
         
         .about_us_content_block_boxes_four_maintext {
-          margin-top: 118px;
+          margin-top: 70px;
             margin-left: 140px;
             font-weight: 700;
             font-size: 16px;
@@ -430,21 +489,39 @@
                     height: 100%;
                 }
 
+                /* Media query for alternating stacked layout */
+@media (width < 768px) {
+    .about_us_content_block {
+        display: none;
+      }
 
+}
+
+    
+  
                 /* Achievements section start */
+
+
+                
+                
+                
                 .acm_headline {
                     color: var(--color-black);
                     height: 60px;
                     border-bottom: 1px solid var(--color-black);
                     font-weight: 700;
                     margin-top: 70px;
-                    
+                
                     display: flex;
                     justify-self: flex-start;
                     margin: 0 auto;
                     width: var(--width-full);
                     font-size: 50px;
+                
+                    /* Move text to the right */
+                    padding-left: 160px; /* Adjust the value as needed */
                 }
+                
                 .grid-wrapper {
                     margin: 0 auto;
                     width: var(--width-12col);
@@ -484,19 +561,38 @@
                 
                 .achievements_image_frame {
                 background-color: var(--color-white);
-                width: 490px;
-                height: 360px;
+                width: 560px;
+                height: 340px;
                 }
+
+                .achievements_image_frame_one {
+                    background-color: var(--color-white);
+                    width: 560px;
+                height: 340px;
+                }
+
+                .achievements_image_frame_photo_one img {
+                    display: flex ;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    width: 530px;
+                    height: 300px;
+                } 
 
                 .achievements_image_frame_photo {
                     display: flex;
                     justify-content: center;
                     margin-top: 20px;
+                    width: auto;
+                    height: 300px;
                 }
+
+            
 
                 .achievements_description {
                     grid-column: 3 / span 6;
-                    margin-bottom: 5px; /* Minimal space below the description */
+                    margin-bottom: 5px; 
                     color: var(--color-white);
                     font-size: 30px;
                     font-weight: 400;
@@ -508,8 +604,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 30px; /* Space between items */
-                    margin-top: -40px; /* Negative value to move details up */
+                    gap: 30px; 
+                    margin-top: -40px; 
                   }
                   
                   .achievements_upload_details_author,
@@ -522,7 +618,16 @@
                   }
                   
                   
-                  
+                  @media (width < 768px) {
+                    .acm_headline {
+                        display: flex;
+                        margin: 0 auto;
+                        padding-left: 10px; /* Adjust for smaller screens */
+                        border-bottom: 0px;
+                    }
+                }
+
+        
 
                 /* Achievements section end */
 
@@ -576,6 +681,37 @@
                     
                     color: var(--color-white);
                 }
+
+                @media (width < 768px) {
+                    .achievements_description {
+                        grid-column: 1 / span 1;
+                        margin-left: 18px;
+                
+                }
+
+                .achievements_upload_details_author, .achievements_upload_details_recency, .achievements_upload_details_date {
+                    display: none;
+                }
+
+                .achievements_image_frame_one, .achievements_image_frame{
+                    
+                    margin-left: 18px;
+                }
+            }
+
+            @media (width < 768px) {
+                .footer_left {
+                    grid-column: 2 / span 4;
+                    margin: 0 auto;
+                    
+                }
+
+                .footer_middle {
+                    grid-column: 2 / span 3;
+                    margin: 0 auto;
+                    margin-left: 120px;
+                }
+            }
 
                 /*  PAGE 2 START */
 
@@ -681,6 +817,7 @@
                 .cards_container{
                     gap: 50px;
                     margin-bottom: 100px;
+                    margin-top: 30px;
                 }
                 
                 .cards_template {
@@ -732,11 +869,12 @@
                 .headline_h2{
                     grid-column: 1 / span 6;
                     margin-bottom: 20px;
+                    font-size: 30px;
                 }
                 
                 .know_us_better p{
                     grid-column: 1 / span 5;
-                    font-size: 16px;
+                    font-size: 20px;
                     line-height: 30px;
                     margin-bottom: 20px;
                 }
@@ -773,7 +911,7 @@
                 .know_us_better img{
                     grid-column: 7 / span 6;
                     grid-row: 1 / span 3;
-                    height: 420px;
+                    height: auto;
                     object-fit: cover;
                     object-position: center;
                     width: var(--width-full);
@@ -827,7 +965,7 @@
                 border-bottom: 1px solid var(--color-black);
                 text-transform: uppercase;
                 font-weight: 700;
-                margin-top: 70px;
+            
                 display: flex;
                 align-items: center;
                 justify-self: flex-start;
@@ -849,6 +987,7 @@
               }
               .reasons {
                 margin-bottom: 250px;
+                margin-left: 20px;
               }
               .reasons ol {
                 color: var(--color-black);
@@ -869,5 +1008,5 @@
               background: #ffffff;
             }
 
-                  
+            /*  PART 3 END */      
                   
