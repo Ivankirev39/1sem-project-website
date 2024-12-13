@@ -44,35 +44,7 @@
         background-color: var(--color-white);
         font-family: "Merriweather Sans", system-ui;
     }
-    @media (width < 768px) {
-        .nav-container ul {
-            flex-direction: column; 
-            gap: 10px; 
-            padding-left: 10px; 
-            margin-left: 60px;
-        }
 
-        .nav-container ul li {
-            flex-direction: column; 
-            gap: 10px; 
-            font-size: 18px;
-            
-        }
-    
-    
-        .search-box {
-            align-self: flex-start; 
-        }
-
-        
-    .nav-container ul li:nth-child(1) {
-        width: 120px; 
-        margin-left: -25px;
-    
-    }
-
-    
-    }
     .container{
     background: var(--color-white);
     width: var(--width-full);
@@ -293,20 +265,20 @@
           
           @media (width < 768px) {
             .organization_categories {
-              flex-wrap: wrap; /* Allow items to wrap onto the next row */
-              gap: 40px; /* Further reduce gap */
+              flex-wrap: wrap; 
+              gap: 40px; 
             }
             
             .organization_categories_block {
-              width: 100px; /* Shrink the blocks */
+              width: 100px;
             }
           
             .organization_categories_block_image img {
-              width: 60px; /* Reduce image size */
+              width: 60px; 
             }
           
             .organization_categories_block_text h6 {
-              font-size: 14px; /* Decrease font size */
+              font-size: 14px; 
             }
           }
           
@@ -314,11 +286,11 @@
           .about_us_content_block {
             display: grid;
             height: auto;
-            grid-template-columns: 1fr 1fr; /* Default layout for larger screens */
+            grid-template-columns: 1fr 1fr; 
             width: var(--width-12col);
             margin: 0 auto;
             margin-top: 10px;
-            gap: 20px; /* Space between items */
+            gap: 20px; 
           }
         
         .about_us_content_block_boxes {
@@ -622,7 +594,7 @@
                     .acm_headline {
                         display: flex;
                         margin: 0 auto;
-                        padding-left: 10px; /* Adjust for smaller screens */
+                        padding-left: 80px; 
                         border-bottom: 0px;
                     }
                 }
@@ -685,7 +657,7 @@
                 @media (width < 768px) {
                     .achievements_description {
                         grid-column: 1 / span 1;
-                        margin-left: 18px;
+                        margin-left: 50px;
                 
                 }
 
@@ -694,8 +666,8 @@
                 }
 
                 .achievements_image_frame_one, .achievements_image_frame{
-                    
-                    margin-left: 18px;
+                
+                    margin-left: 50px;
                 }
             }
 
@@ -1155,3 +1127,33 @@
 
             /*  PART 3 END */      
                   
+
+            @media (width < 768px) {
+                .nav-container ul {
+                    flex-direction: column; 
+                    gap: 10px; 
+                  margin: 0 auto;
+                    margin-left: 120px;
+                }
+        
+                .nav-container ul li {
+                    flex-direction: column; 
+                    gap: 10px; 
+                    font-size: 18px;
+                    
+                }
+            
+            
+                .search-box {
+                    align-self: flex-start; 
+                }
+        
+                
+            .nav-container ul li:nth-child(1) {
+                width: 120px; 
+                margin-left: -25px;
+            
+            }
+        
+            
+            }
