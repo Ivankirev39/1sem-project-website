@@ -1037,7 +1037,7 @@
     
     
             .hero-text-medium-third-page {
-                
+                font-weight: 500;
                 margin-top: 10px;
             }
     
@@ -1111,7 +1111,7 @@
 
 
                 .things-we-have-headline {
-                    margin-left: 120px;
+                    margin-left: 100px;
                     border-bottom: 0px;
                 }
 
